@@ -1,0 +1,181 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 13px;
+    top: 0;
+    right: 0;
+}
+header ul{
+    width: fit-content;
+    margin-top: 8px;
+}
+header ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+}
+header ul li:nth-child(3){
+    padding-right: 15px;
+    padding-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    color: #333;
+}
+header ul li a:hover{
+    text-decoration: underline;
+}
+header ul li button{
+    color: #fff;
+    background-color: #1A73E8;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    margin-right: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+header ul li button:hover{
+    background: rgba(37, 117, 223, 0.966);
+    box-shadow: 0.1px 0px 5px 0.1px rgba(21, 105, 214, 0.856);
+}
+/* main start */
+main{
+    display: flex;
+    justify-content: center;
+}
+main .main .glogo{
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+    margin-left: 150px;
+}
+main .main .searchbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+main .searchbox .search{
+    width: 550px;
+    height: 40px;
+    position: relative;
+    font-size: 16px;
+    margin-top: 25px;
+    padding: 13px;
+    padding-left: 60px;
+    border-radius: 60px;
+    outline: none;
+    border: 1px solid rgb(216, 208, 208);
+}
+main .main .searchbox .icons{
+    position: absolute;
+    width:100%;
+    display: flex;
+    padding:12px 20px;
+    margin-right: 10px;
+    top: 0;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: space-between;
+    pointer-events: none;
+    cursor: none;
+}
+main .searchbox .search:hover{
+    box-shadow: 1px 1px 5px 1px rgb(218, 206, 206);
+}
+main .main .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+main .main .buttons button{
+    padding: 8px 13px;
+    cursor: pointer;
+    margin: 11px 6px;
+    padding: 10PX 16px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    background-color: #f8f9fa;
+    color: rgb(65, 66, 66);
+    font-size: 15px;
+}
+main .main .buttons button:hover{
+    border: 0.2px solid rgb(165, 161, 161);
+}
+main .main .lang{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #3C4043;
+}
+main .main .lang a{
+    text-decoration: none;
+}
+main .main .lang a:hover{
+    text-decoration: underline;
+}
+/* Footer start */
+
+footer{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    background: #f2f2f2;
+}
+footer .row{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+footer .row ul{
+    display: flex;
+}
+footer ul li{
+    list-style: none;
+}
+footer ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    /* padding: 15px; */
+    margin:20px 20px;
+    color: #70757A;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+}
+@media (max-width:768px){
+    .main .searchbox .search{
+        width: 78%;
+    }
+    .main .searchbox .icons{
+        width: 84%;
+    }
+    footer .row ul{
+        display: block;
+    }
+    header ul li button{
+        color: #fff;
+        background-color: #1A73E8;
+        border: none;
+        outline: none;
+        padding: 10px 25px;
+        margin-right: 6px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    header ul li button:hover{
+        background: rgba(37, 117, 223, 0.966);
+        box-shadow: 0.1px 0px 5px 0.1px rgba(21, 105, 214, 0.856);
+    }
+}

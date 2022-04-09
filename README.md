@@ -1,0 +1,1 @@
+This is a simple google search page. This site is not respnsive . only html ans css are using to build this site . livwe-site-link: https://smjony-cse-cou-11th-batch.github.io/Simple-Google-Search-Page/
